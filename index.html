@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ALPHA TRADER | Professional Trader & Financial Analyst</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: #ffffff;
+}
+
+a { color: #38bdf8; text-decoration: none; }
+
+header {
+    background: linear-gradient(135deg, #020617, #111827);
+    padding: 90px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #25D366;
+    color: #000;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.price {
+    font-size: 1.6rem;
+    color: #22c55e;
+    margin: 15px 0;
+}
+
+.testimony {
+    background: #020617;
+    padding: 20px;
+    border-left: 4px solid #38bdf8;
+    border-radius: 8px;
+}
+
+form {
+    background: #020617;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #25D366;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+    <h1>ALPHA TRADER</h1>
+    <p>Professional Trader • Speculator • Financial Analyst</p>
+    <a class="btn" href="#contact">Chat on WhatsApp</a>
+</header>
+
+<!-- ABOUT -->
+<section>
+<h2>About Me</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+I am <strong>ALPHA TRADER</strong>, a professional trader, speculator, and financial analyst.
+I help traders achieve consistent profitability through structured mentorship,
+accurate market analysis, and disciplined risk management.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section>
+<h2>Services & Pricing</h2>
+<div class="cards">
+
+<div class="card">
+<h3>Mentorship Program</h3>
+<p>From beginner to professional trading mastery.</p>
+<div class="price">₦250,000</div>
+</div>
+
+<div class="card">
+<h3>VIP Signal Service</h3>
+<p>High-probability trade signals with proper risk control.</p>
+<div class="price">₦50,000 / month</div>
+</div>
+
+<div class="card">
+<h3>1-on-1 Consultation</h3>
+<p>Personal strategy review and market guidance.</p>
+<div class="price">₦30,000 / session</div>
+</div>
+
+</div>
+</section>
+
+<!-- DIGITAL BOOKS -->
+<section>
+<h2>Digital Trading Books (PDF)</h2>
+<div class="cards">
+
+<div class="card">
+<h3>Forex Mastery Blueprint</h3>
+<p>Complete trading foundation and strategy guide.</p>
+<div class="price">₦15,000</div>
+</div>
+
+<div class="card">
+<h3>Risk Management Secrets</h3>
+<p>Professional capital protection techniques.</p>
+<div class="price">₦10,000</div>
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+<h2>Testimonials</h2>
+<div class="cards">
+
+<div class="testimony">
+<p>“Alpha Trader transformed my trading completely. Consistency is now real.”</p>
+<strong>— Verified Client</strong>
+</div>
+
+<div class="testimony">
+<p>“Professional mentorship with real market experience.”</p>
+<strong>— Mentorship Student</strong>
+</div>
+
+<div class="testimony">
+<p>“VIP signals are accurate and well managed.”</p>
+<strong>— VIP Member</strong>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT / WHATSAPP FORM -->
+<section id="contact">
+<h2>Book a Session / Order</h2>
+
+<form onsubmit="sendWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+
+<select id="service">
+<option>Mentorship Program</option>
+<option>VIP Signal Service</option>
+<option>1-on-1 Consultation</option>
+<option>Buy Trading PDF</option>
+</select>
+
+<textarea id="message" rows="4" placeholder="Your message"></textarea>
+
+<button type="submit">Send via WhatsApp</button>
+</form>
+
+<p style="text-align:center; margin-top:20px;">
+📧 <a href="mailto:alphatraderfxguru@gmail.com">alphatraderfxguru@gmail.com</a><br>
+📞 <a href="tel:+2349044785578">+234 904 478 5578</a>
+</p>
+</section>
+
+<footer>
+© 2025 ALPHA TRADER. All Rights Reserved.
+</footer>
+
+<script>
+function sendWhatsApp() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let service = document.getElementById("service").value;
+    let message = document.getElementById("message").value;
+
+    let whatsappURL = "https://wa.me/2349044785578?text="
+        + encodeURIComponent(
+            "Hello Alpha Trader,%0A%0A"
+            + "Name: " + name + "%0A"
+            + "Email: " + email + "%0A"
+            + "Service: " + service + "%0A"
+            + "Message: " + message
+        );
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
+
+</body>
+</html>
